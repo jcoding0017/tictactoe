@@ -70,6 +70,7 @@ function restartGame() {
   currentOption = 0;
   container.addEventListener("click", playGame);
   gameOverWindow.classList.add("hide");
+  gameOverWindow.classList.remove("show");
 }
 
 //checks if board contains any winning combinatino of X or Os

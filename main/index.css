@@ -13,14 +13,13 @@ body {
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   display: flex;
   background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
 
 .box {
-  padding: 100px;
-  font-size: 90px;
+  font-size: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +29,10 @@ body {
 
 .container {
   margin-top: 50px;
-  width: auto;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
 }
 
 .box {
