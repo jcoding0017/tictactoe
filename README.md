@@ -1,1 +1,1 @@
-Simple Tic Tac Toe Game
+Simple 3by3 Tic Tac Toe Game
