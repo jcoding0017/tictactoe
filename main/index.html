@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box top-left" data-location="1"></div>
+      <div class="box top-middle" data-location="2"></div>
+      <div class="box top-right" data-location="3"></div>
+      <div class="box mid-left" data-location="4"></div>
+      <div class="box mid-middle" data-location="5"></div>
+      <div class="box mid-right" data-location="6"></div>
+      <div class="box bottom-left" data-location="7"></div>
+      <div class="box bottom-middle" data-location="8"></div>
+      <div class="box bottom-right" data-location="9"></div>
+    </div>
+    <div class="game-over hide">
+      <p class="game-over-text"></p>
+      <button class="quit">x</button>
+    </div>
+    <button class="restart">Restart <span class="arrow">&#8635;</span></button>
+  </body>
+</html>
