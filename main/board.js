@@ -80,8 +80,3 @@ class TicTacToeBoard {
     });
   }
 }
-
-let x = new TicTacToeBoard(9);
-
-x.createBoardHtml();
-x.decorateBoardCss();
