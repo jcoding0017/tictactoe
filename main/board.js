@@ -1,5 +1,7 @@
 "use strict";
 
+//board class to make tictactoe board
+
 class TicTacToeBoard {
   constructor(dimensions) {
     this.dimensions = dimensions;
@@ -9,31 +11,31 @@ class TicTacToeBoard {
     return this.dimensions;
   }
 
-  createRowsArray() {
-    const rows = [];
-    let row = [];
-    let nthRow = 0;
+  // createRowsArray() {
+  //   const rows = [];
+  //   let row = [];
+  //   let nthRow = 0;
 
-    for (let i = 0; i < this.getDimensions() ** 2; i++) {
-      row.push(i);
-      if (row.length == this.getDimensions()) {
-        rows.push([...row]);
-        nthRow++;
-        row = [];
-      }
-    }
-    return rows;
-  }
+  //   for (let i = 0; i < this.getDimensions() ** 2; i++) {
+  //     row.push(i);
+  //     if (row.length == this.getDimensions()) {
+  //       rows.push([...row]);
+  //       nthRow++;
+  //       row = [];
+  //     }
+  //   }
+  //   return rows;
+  // }
 
-  createColumnsArray() {
-    const columns = [];
-    return columns;
-  }
+  // createColumnsArray() {
+  //   const columns = [];
+  //   return columns;
+  // }
 
-  createDiagonalsArray() {
-    const diagonals = [];
-    return diagonals;
-  }
+  // createDiagonalsArray() {
+  //   const diagonals = [];
+  //   return diagonals;
+  // }
 
   //   findWinningCombinations() {
   //     const rows = this.createRowsArray();
@@ -78,5 +80,10 @@ class TicTacToeBoard {
         column.style.borderRight = "solid black";
       }
     });
+  }
+
+  create() {
+    this.createBoardHtml();
+    this.decorateBoardCss();
   }
 }

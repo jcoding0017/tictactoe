@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="index.css" />
     <!-- <script defer src="index.js"></script> -->
     <script defer src="board.js"></script>
-    <script defer src="game.js"></script>
+    <script defer src="gamelogic.js"></script>
   </head>
 
   <body>
-    <div class="options-container">
-      <button class="options options--active">3x3</button>
-      <button class="options">4x4</button>
-      <button class="options">5x5</button>
-    </div>
-    <div class="container">
-      <!-- <div class="box top-left" data-location="1"></div>
+    <div class="wrapper">
+      <div class="options-container">
+        <button class="options options--active">3x3</button>
+        <button class="options">4x4</button>
+        <button class="options">5x5</button>
+        <select class="options select-tab" name="x" id="x">
+          <option value="six">6x6</option>
+          <option value="seven">7x7</option>
+          <option value="eight">8x8</option>
+          <option value="nine">9x9</option>
+        </select>
+      </div>
+      <div class="container">
+        <!-- <div class="box top-left" data-location="1"></div>
       <div class="box top-middle" data-location="2"></div>
       <div class="box top-right" data-location="3"></div>
       <div class="box mid-left" data-location="4"></div>
@@ -27,11 +34,14 @@
       <div class="box bottom-left" data-location="7"></div>
       <div class="box bottom-middle" data-location="8"></div>
       <div class="box bottom-right" data-location="9"></div> -->
+      </div>
+      <div class="game-over hide">
+        <p class="game-over-text"></p>
+        <button class="quit">x</button>
+      </div>
+      <button class="restart">
+        Restart <span class="arrow">&#8635;</span>
+      </button>
     </div>
-    <div class="game-over hide">
-      <p class="game-over-text"></p>
-      <button class="quit">x</button>
-    </div>
-    <button class="restart">Restart <span class="arrow">&#8635;</span></button>
   </body>
 </html>

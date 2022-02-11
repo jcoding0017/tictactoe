@@ -9,13 +9,24 @@ html {
 }
 
 body {
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  flex-direction: column;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+.wrapper {
   gap: 3rem;
   display: flex;
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 100px);
+  margin-top: 50px;
+}
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .box {
@@ -28,46 +39,13 @@ body {
   /* background-color: black; */
 }
 
-.container {
-  margin-top: 50px;
-  width: 400px;
-  height: 400px;
-  position: relative;
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-}
-
 .box:hover {
   background-color: rgb(19, 110, 230, 0.8);
 }
 
-/* .mid-middle {
-  border: solid black;
-}
-
-.mid-right {
-  border-top: solid black;
-  border-bottom: solid black;
-}
-
-.mid-left {
-  border-top: solid black;
-  border-bottom: solid black;
-}
-
-.top-middle {
-  border-left: solid black;
-  border-right: solid black;
-}
-
-.bottom-middle {
-  border-left: solid black;
-  border-right: solid black;
-} */
-
 .game-over {
   background-color: rgba(255, 255, 255, 0.6);
-  height: 100px;
+  height: 55px;
   width: 35%;
   position: relative;
   display: flex;
@@ -125,13 +103,19 @@ button {
 
 .restart {
   font-size: 18px;
-  width: 200px;
-  height: 85px;
   padding: 0.7rem 2.5rem;
 }
 
 button:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.options-container {
+  flex-basis: auto;
+}
+
+.options {
+  width: 100px;
 }
 
 .options--active {
@@ -140,4 +124,17 @@ button:hover {
 
 .options--active:hover {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 50rem;
+  background-color: rgba(255, 255, 255, 0.6); /* Green */
+  margin-left: 10px;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
 }
