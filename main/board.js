@@ -1,50 +1,15 @@
 "use strict";
 
-//board class to make tictactoe board
-
+//TicTacToeBoard that takes 1 argument, dimensions, and renders on web-page upon instantiation
 class TicTacToeBoard {
   constructor(dimensions) {
     this.dimensions = dimensions;
+    this.create();
   }
 
   getDimensions() {
     return this.dimensions;
   }
-
-  // createRowsArray() {
-  //   const rows = [];
-  //   let row = [];
-  //   let nthRow = 0;
-
-  //   for (let i = 0; i < this.getDimensions() ** 2; i++) {
-  //     row.push(i);
-  //     if (row.length == this.getDimensions()) {
-  //       rows.push([...row]);
-  //       nthRow++;
-  //       row = [];
-  //     }
-  //   }
-  //   return rows;
-  // }
-
-  // createColumnsArray() {
-  //   const columns = [];
-  //   return columns;
-  // }
-
-  // createDiagonalsArray() {
-  //   const diagonals = [];
-  //   return diagonals;
-  // }
-
-  //   findWinningCombinations() {
-  //     const rows = this.createRowsArray();
-  //     const columns = this.createColumnsArray();
-  //     const diagonals = this.createDiagonalsArray();
-
-  //     const winningCombinations = [...rows, ...columns, ...diagonals];
-  //     return winningCombinations;
-  //   }
 
   createBoardHtml() {
     const container = document.querySelector(".container");
@@ -57,7 +22,7 @@ class TicTacToeBoard {
 
   decorateBoardCss() {
     const container = document.querySelector(".container");
-    container.style.gridTemplateColumns = `repeat(${this.getDimensions()}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${this.getDimensions()}, minmax(0, 1fr)`;
 
     //border-top for all row except first row.
     const allBoxes = document.querySelectorAll(".box");
