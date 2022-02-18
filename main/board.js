@@ -1,10 +1,10 @@
 "use strict";
 
-//TicTacToeBoard that takes 1 argument, dimensions, and renders on web-page upon instantiation
 class TicTacToeBoard {
   constructor(dimensions) {
     this.dimensions = dimensions;
     this.create();
+    console.log(`new board with ${this.dimensions} has been created`);
   }
 
   getDimensions() {

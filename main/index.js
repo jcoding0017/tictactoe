@@ -1,4 +1,5 @@
 "use strict";
+// old code for 3by3 tictactoe
 
 const restartButton = document.querySelector(".restart");
 const gameOverWindow = document.querySelector(".game-over");
@@ -29,8 +30,6 @@ function init() {
   restartButton.addEventListener("click", restartGame);
   closeGameOverWindowbtn.addEventListener("click", () => {
     console.log("this");
-    gameOverWindow.classList.remove("show");
-    gameOverWindow.classList.add("hide");
   });
 }
 
